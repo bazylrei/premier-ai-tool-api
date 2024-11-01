@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "premier"
+version = "0.0.1"
+description = "Premier AI Tool"
+authors = [ "Bazyl Reinstein" ]
+license = "MIT"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+start = "main:start"
+
+[tool.poetry.dependencies]
+python = ">=3.10.0,<3.12"
+requests = "*"
+pandas = "*"
+fastapi = ">=0.112.0,<0.113.0"
+python-dotenv = "^1.0.1"
+langchain = "^0.3.5"
+langchain-ollama = "^0.2.0"
+langchain-community = "^0.3.3"
+langchain-core = "^0.3.13"
+uvicorn = "^0.32.0"
+
+[tool.pylint]
+max-line-length = 88
